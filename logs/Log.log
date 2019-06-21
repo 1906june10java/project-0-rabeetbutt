@@ -1,0 +1,5 @@
+2019-06-20 15:12:06 ERROR ConnectionUtil:28 - Could not connect.
+2019-06-20 21:20:35 INFO  ConnectionUtil:26 - Connection successful
+2019-06-20 22:51:37 INFO  ConnectionUtil:26 - Connection successful
+2019-06-21 11:12:29 TRACE UserRepository:28 - Entering create method with parameter: User [firstName=Connor, lastName=Murphy, account=Account [balance=3000000.0, accountID=cm109a2223]]
+2019-06-21 11:48:02 TRACE UserRepository:28 - Entering create method with parameter: User [firstName=Connor, lastName=Murphy, account=Account [userName=cmurphy123, password=Password1, accountID=cm109a2223, balance=3000000.0]]
