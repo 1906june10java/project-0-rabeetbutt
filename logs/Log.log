@@ -3,3 +3,23 @@
 2019-06-20 22:51:37 INFO  ConnectionUtil:26 - Connection successful
 2019-06-21 11:12:29 TRACE UserRepository:28 - Entering create method with parameter: User [firstName=Connor, lastName=Murphy, account=Account [balance=3000000.0, accountID=cm109a2223]]
 2019-06-21 11:48:02 TRACE UserRepository:28 - Entering create method with parameter: User [firstName=Connor, lastName=Murphy, account=Account [userName=cmurphy123, password=Password1, accountID=cm109a2223, balance=3000000.0]]
+2019-06-21 15:38:55 TRACE UserRepository:28 - Entering create method with parameter: User [firstName=Connor, lastName=Murphy, account=Account [userName=cmurphy123, password=Password1, accountID=cm109a2223, balance=3000000.0]]
+2019-06-21 15:38:57 ERROR UserRepository:48 - Could not create user account.
+java.sql.SQLIntegrityConstraintViolationException: ORA-00001: unique constraint (BANK_DB.PK_USER) violated
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+	at com.revature.repository.UserRepository.create(UserRepository.java:43)
+	at com.revature.repository.UserRepository.main(UserRepository.java:74)
+2019-06-21 15:40:30 TRACE UserRepository:28 - Entering create method with parameter: User [firstName=Connor, lastName=Murphy, account=Account [userName=cmurphy123, password=Password1, accountID=cm109a2223, balance=3000000.0]]

@@ -4,14 +4,13 @@ public class Account {
 	
 	protected String userName;
 	protected String password;
-	protected String accountID;
 	protected double balance;
 	
-	public Account(String uName, String pWord, String aID, Double b) {
-		this.userName = uName;
-		this.password = pWord;
-		this.accountID = aID;
-		this.balance = b;
+	public Account(String userName, String password, double balance) {
+		super();
+		this.userName = userName;
+		this.password = password;
+		this.balance = balance;
 	}
 
 	public String getUserName() {
@@ -30,14 +29,6 @@ public class Account {
 		this.password = password;
 	}
 
-	public String getAccountID() {
-		return accountID;
-	}
-
-	public void setAccountID(String accountID) {
-		this.accountID = accountID;
-	}
-
 	public double getBalance() {
 		return balance;
 	}
@@ -50,7 +41,6 @@ public class Account {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((accountID == null) ? 0 : accountID.hashCode());
 		long temp;
 		temp = Double.doubleToLongBits(balance);
 		result = prime * result + (int) (temp ^ (temp >>> 32));
@@ -68,11 +58,6 @@ public class Account {
 		if (getClass() != obj.getClass())
 			return false;
 		Account other = (Account) obj;
-		if (accountID == null) {
-			if (other.accountID != null)
-				return false;
-		} else if (!accountID.equals(other.accountID))
-			return false;
 		if (Double.doubleToLongBits(balance) != Double.doubleToLongBits(other.balance))
 			return false;
 		if (password == null) {
@@ -90,12 +75,9 @@ public class Account {
 
 	@Override
 	public String toString() {
-		return "Account [userName=" + userName + ", password=" + password + ", accountID=" + accountID + ", balance="
-				+ balance + "]";
+		return "Account [userName=" + userName + ", password=" + password + ", balance=" + balance + "]";
 	}
-
 	
-
 	
 	
 	
