@@ -23,3 +23,491 @@ java.sql.SQLIntegrityConstraintViolationException: ORA-00001: unique constraint 
 	at com.revature.repository.UserRepository.create(UserRepository.java:43)
 	at com.revature.repository.UserRepository.main(UserRepository.java:74)
 2019-06-21 15:40:30 TRACE UserRepository:28 - Entering create method with parameter: User [firstName=Connor, lastName=Murphy, account=Account [userName=cmurphy123, password=Password1, accountID=cm109a2223, balance=3000000.0]]
+2019-06-24 19:30:42 TRACE UserRepository:63 - Entering find user name by name method with paramter: rabeet009
+2019-06-24 19:31:06 TRACE UserRepository:90 - Entering find password by name method with username: rabeet009
+2019-06-24 19:45:23 TRACE UserRepository:63 - Entering find user name by name method with paramter: elbio
+2019-06-24 19:45:35 TRACE UserRepository:90 - Entering find password by name method with username: elbio
+2019-06-24 19:45:36 TRACE UserRepository:90 - Entering find password by name method with username: elbio
+2019-06-24 20:36:36 TRACE UserRepository:63 - Entering find user name by name method with paramter: rabeet009
+2019-06-24 20:36:42 TRACE UserRepository:90 - Entering find password by name method with username: rabeet009
+2019-06-24 20:36:43 TRACE UserRepository:90 - Entering find password by name method with username: rabeet009
+2019-06-24 20:36:50 TRACE UserRepository:117 - Entering update account balance method with new amount 100.0 for username: rabeet009
+2019-06-24 20:36:51 ERROR UserRepository:135 - Could not update balance
+java.sql.SQLException: ORA-01002: fetch out of sequence
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.fetch(T4CPreparedStatement.java:1022)
+	at oracle.jdbc.driver.OracleStatement.fetchMoreRows(OracleStatement.java:3590)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.fetchMoreRows(InsensitiveScrollableResultSet.java:1008)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.absoluteInternal(InsensitiveScrollableResultSet.java:972)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.next(InsensitiveScrollableResultSet.java:572)
+	at com.revature.repository.UserRepository.updateBalance(UserRepository.java:130)
+	at com.revature.service.Services.validateBalance(Services.java:56)
+	at com.revature.controller.Controller.start(Controller.java:55)
+	at com.revature.Main.main(Main.java:18)
+2019-06-24 21:40:12 TRACE UserRepository:63 - Entering find user name by name method with paramter: rabeet009
+2019-06-24 21:40:18 TRACE UserRepository:90 - Entering find password by name method with username: rabeet009
+2019-06-24 21:40:18 TRACE UserRepository:90 - Entering find password by name method with username: rabeet009
+2019-06-24 21:40:20 TRACE UserRepository:117 - Entering update account balance method with new amount 100.0 for username: rabeet009
+2019-06-24 21:40:21 ERROR UserRepository:135 - Could not update balance
+java.sql.SQLException: ORA-01002: fetch out of sequence
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.fetch(T4CPreparedStatement.java:1022)
+	at oracle.jdbc.driver.OracleStatement.fetchMoreRows(OracleStatement.java:3590)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.fetchMoreRows(InsensitiveScrollableResultSet.java:1008)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.absoluteInternal(InsensitiveScrollableResultSet.java:972)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.next(InsensitiveScrollableResultSet.java:572)
+	at com.revature.repository.UserRepository.updateBalance(UserRepository.java:130)
+	at com.revature.service.Services.validateBalance(Services.java:56)
+	at com.revature.controller.Controller.start(Controller.java:55)
+	at com.revature.Main.main(Main.java:18)
+2019-06-25 05:15:08 TRACE UserRepository:63 - Entering find user name by name method with paramter: rabeet009
+2019-06-25 05:15:15 TRACE UserRepository:90 - Entering find password by name method with username: rabeet009
+2019-06-25 05:15:16 TRACE UserRepository:90 - Entering find password by name method with username: rabeet009
+2019-06-25 05:15:19 TRACE UserRepository:117 - Entering update account balance method with new amount 100.0 for username: rabeet009
+2019-06-25 05:15:20 ERROR UserRepository:135 - Could not update balance
+java.sql.SQLException: ORA-01002: fetch out of sequence
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.fetch(T4CPreparedStatement.java:1022)
+	at oracle.jdbc.driver.OracleStatement.fetchMoreRows(OracleStatement.java:3590)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.fetchMoreRows(InsensitiveScrollableResultSet.java:1008)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.absoluteInternal(InsensitiveScrollableResultSet.java:972)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.next(InsensitiveScrollableResultSet.java:572)
+	at com.revature.repository.UserRepository.updateBalance(UserRepository.java:130)
+	at com.revature.service.Services.validateBalance(Services.java:56)
+	at com.revature.controller.Controller.start(Controller.java:55)
+	at com.revature.Main.main(Main.java:18)
+2019-06-25 05:17:17 TRACE UserRepository:63 - Entering find user name by name method with paramter: k
+2019-06-25 05:17:19 TRACE UserRepository:90 - Entering find password by name method with username: k
+2019-06-25 05:17:20 TRACE UserRepository:90 - Entering find password by name method with username: k
+2019-06-25 05:18:26 TRACE UserRepository:63 - Entering find user name by name method with paramter: 3
+2019-06-25 05:18:28 TRACE UserRepository:90 - Entering find password by name method with username: 3
+2019-06-25 05:18:28 TRACE UserRepository:90 - Entering find password by name method with username: 3
+2019-06-25 05:18:32 TRACE UserRepository:117 - Entering update account balance method with new amount -10.0 for username: 3
+2019-06-25 05:18:32 ERROR UserRepository:135 - Could not update balance
+java.sql.SQLException: ORA-01002: fetch out of sequence
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.fetch(T4CPreparedStatement.java:1022)
+	at oracle.jdbc.driver.OracleStatement.fetchMoreRows(OracleStatement.java:3590)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.fetchMoreRows(InsensitiveScrollableResultSet.java:1008)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.absoluteInternal(InsensitiveScrollableResultSet.java:972)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.next(InsensitiveScrollableResultSet.java:572)
+	at com.revature.repository.UserRepository.updateBalance(UserRepository.java:130)
+	at com.revature.service.Services.validateBalance(Services.java:56)
+	at com.revature.controller.Controller.start(Controller.java:55)
+	at com.revature.Main.main(Main.java:18)
+2019-06-25 05:23:43 TRACE UserRepository:63 - Entering find user name by name method with paramter: rabeet009
+2019-06-25 05:23:48 TRACE UserRepository:90 - Entering find password by name method with username: rabeet009
+2019-06-25 05:23:49 TRACE UserRepository:90 - Entering find password by name method with username: rabeet009
+2019-06-25 05:23:51 TRACE UserRepository:117 - Entering update account balance method with new amount 100.0 for username: rabeet009
+2019-06-25 05:23:51 ERROR UserRepository:135 - Could not update balance
+java.sql.SQLException: ORA-01002: fetch out of sequence
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.fetch(T4CPreparedStatement.java:1022)
+	at oracle.jdbc.driver.OracleStatement.fetchMoreRows(OracleStatement.java:3590)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.fetchMoreRows(InsensitiveScrollableResultSet.java:1008)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.absoluteInternal(InsensitiveScrollableResultSet.java:972)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.next(InsensitiveScrollableResultSet.java:572)
+	at com.revature.repository.UserRepository.updateBalance(UserRepository.java:130)
+	at com.revature.service.Services.validateBalance(Services.java:56)
+	at com.revature.controller.Controller.start(Controller.java:58)
+	at com.revature.Main.main(Main.java:18)
+2019-06-25 05:25:51 TRACE UserRepository:63 - Entering find user name by name method with paramter: rabeet009
+2019-06-25 05:25:55 TRACE UserRepository:90 - Entering find password by name method with username: rabeet009
+2019-06-25 05:25:55 TRACE UserRepository:90 - Entering find password by name method with username: rabeet009
+2019-06-25 05:27:01 TRACE UserRepository:63 - Entering find user name by name method with paramter: rabeet009
+2019-06-25 05:27:05 TRACE UserRepository:90 - Entering find password by name method with username: rabeet009
+2019-06-25 05:33:35 TRACE UserRepository:63 - Entering find user name by name method with paramter: rabeet009
+2019-06-25 05:33:38 TRACE UserRepository:90 - Entering find password by name method with username: rabeet009
+2019-06-25 05:33:38 TRACE UserRepository:90 - Entering find password by name method with username: rabeet009
+2019-06-25 05:35:39 INFO  ConnectionUtil:26 - Connection successful
+2019-06-25 05:36:00 TRACE UserRepository:63 - Entering find user name by name method with paramter: rabeet009
+2019-06-25 05:36:04 TRACE UserRepository:90 - Entering find password by name method with username: rabeet009
+2019-06-25 05:36:04 TRACE UserRepository:90 - Entering find password by name method with username: rabeet009
+2019-06-25 05:45:36 TRACE UserRepository:63 - Entering find user name by name method with paramter: rabeet009
+2019-06-25 05:45:41 TRACE UserRepository:90 - Entering find password by name method with username: rabeet009
+2019-06-25 05:45:41 TRACE UserRepository:90 - Entering find password by name method with username: rabeet009
+2019-06-25 05:49:15 TRACE UserRepository:63 - Entering find user name by name method with paramter: rabeet009
+2019-06-25 05:49:19 TRACE UserRepository:90 - Entering find password by name method with username: rabeet009
+2019-06-25 05:49:19 TRACE UserRepository:90 - Entering find password by name method with username: rabeet009
+2019-06-25 05:49:19 TRACE UserRepository:90 - Entering find password by name method with username: rabeet009
+2019-06-25 05:50:25 TRACE UserRepository:63 - Entering find user name by name method with paramter: rabeet009
+2019-06-25 05:50:34 TRACE UserRepository:90 - Entering find password by name method with username: rabeet009
+2019-06-25 05:50:34 TRACE UserRepository:90 - Entering find password by name method with username: rabeet009
+2019-06-25 05:50:34 TRACE UserRepository:90 - Entering find password by name method with username: rabeet009
+2019-06-25 05:54:41 TRACE UserRepository:63 - Entering find user name by name method with paramter: rabeet009
+2019-06-25 05:54:45 TRACE UserRepository:90 - Entering find password by name method with username: rabeet009
+2019-06-25 05:54:45 TRACE UserRepository:90 - Entering find password by name method with username: rabeet009
+2019-06-25 05:56:32 TRACE UserRepository:63 - Entering find user name by name method with paramter: rabeet009
+2019-06-25 05:56:35 TRACE UserRepository:90 - Entering find password by name method with username: rabeet009
+2019-06-25 05:56:35 TRACE UserRepository:90 - Entering find password by name method with username: rabeet009
+2019-06-25 05:56:35 TRACE UserRepository:90 - Entering find password by name method with username: rabeet009
+2019-06-25 05:56:47 TRACE UserRepository:117 - Entering update account balance method with new amount 100.0 for username: rabeet009
+2019-06-25 05:56:47 ERROR UserRepository:135 - Could not update balance
+java.sql.SQLException: ORA-01002: fetch out of sequence
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.fetch(T4CPreparedStatement.java:1022)
+	at oracle.jdbc.driver.OracleStatement.fetchMoreRows(OracleStatement.java:3590)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.fetchMoreRows(InsensitiveScrollableResultSet.java:1008)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.absoluteInternal(InsensitiveScrollableResultSet.java:972)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.next(InsensitiveScrollableResultSet.java:572)
+	at com.revature.repository.UserRepository.updateBalance(UserRepository.java:130)
+	at com.revature.service.Services.validateBalance(Services.java:59)
+	at com.revature.controller.Controller.start(Controller.java:58)
+	at com.revature.Main.main(Main.java:18)
+2019-06-25 06:12:19 TRACE UserRepository:63 - Entering find user name by name method with paramter: rabeet009
+2019-06-25 06:12:23 TRACE UserRepository:90 - Entering find password by name method with username: rabeet009
+2019-06-25 06:12:23 TRACE UserRepository:90 - Entering find password by name method with username: rabeet009
+2019-06-25 06:12:24 TRACE UserRepository:90 - Entering find password by name method with username: rabeet009
+2019-06-25 06:12:27 TRACE UserRepository:117 - Entering update account balance method with new amount 100.0 for username: rabeet009
+2019-06-25 06:12:27 ERROR UserRepository:135 - Could not update balance
+java.sql.SQLException: ORA-01002: fetch out of sequence
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.fetch(T4CPreparedStatement.java:1022)
+	at oracle.jdbc.driver.OracleStatement.fetchMoreRows(OracleStatement.java:3590)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.fetchMoreRows(InsensitiveScrollableResultSet.java:1008)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.absoluteInternal(InsensitiveScrollableResultSet.java:972)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.next(InsensitiveScrollableResultSet.java:572)
+	at com.revature.repository.UserRepository.updateBalance(UserRepository.java:130)
+	at com.revature.service.Services.validateBalance(Services.java:59)
+	at com.revature.controller.Controller.start(Controller.java:58)
+	at com.revature.Main.main(Main.java:18)
+2019-06-25 06:12:27 TRACE UserRepository:117 - Entering update account balance method with new amount 100.0 for username: rabeet009
+2019-06-25 06:12:27 ERROR UserRepository:135 - Could not update balance
+java.sql.SQLException: ORA-01002: fetch out of sequence
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.fetch(T4CPreparedStatement.java:1022)
+	at oracle.jdbc.driver.OracleStatement.fetchMoreRows(OracleStatement.java:3590)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.fetchMoreRows(InsensitiveScrollableResultSet.java:1008)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.absoluteInternal(InsensitiveScrollableResultSet.java:972)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.next(InsensitiveScrollableResultSet.java:572)
+	at com.revature.repository.UserRepository.updateBalance(UserRepository.java:130)
+	at com.revature.service.Services.validateBalance(Services.java:60)
+	at com.revature.controller.Controller.start(Controller.java:58)
+	at com.revature.Main.main(Main.java:18)
+2019-06-25 06:12:27 TRACE UserRepository:35 - Entering create method with parameter: User [firstName=rabeet, lastName=butt, account=Account [userName=rabeet009, password=password, balance=100.0]]
+2019-06-25 06:13:50 TRACE UserRepository:63 - Entering find user name by name method with paramter: rabeet009
+2019-06-25 06:24:55 TRACE UserRepository:90 - Entering find password by name method with username: rabeet009
+2019-06-25 06:25:08 TRACE UserRepository:117 - Entering update account balance method with new amount 200.0 for username: rabeet009
+2019-06-25 06:25:08 ERROR UserRepository:135 - Could not update balance
+java.sql.SQLSyntaxErrorException: ORA-00900: invalid SQL statement
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:392)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:385)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:938)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Odscrarr.doODNY(T4C8Odscrarr.java:96)
+	at oracle.jdbc.driver.T4CPreparedStatement.doDescribe(T4CPreparedStatement.java:719)
+	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3951)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+	at oracle.jdbc.driver.GeneratedResultSet.getDouble(GeneratedResultSet.java:1328)
+	at com.revature.repository.UserRepository.updateBalance(UserRepository.java:131)
+	at com.revature.service.Services.validateBalance(Services.java:61)
+	at com.revature.controller.Controller.start(Controller.java:58)
+	at com.revature.Main.main(Main.java:18)
+2019-06-25 06:25:08 TRACE UserRepository:117 - Entering update account balance method with new amount 200.0 for username: rabeet009
+2019-06-25 06:25:09 ERROR UserRepository:135 - Could not update balance
+java.sql.SQLSyntaxErrorException: ORA-00900: invalid SQL statement
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:392)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:385)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:938)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Odscrarr.doODNY(T4C8Odscrarr.java:96)
+	at oracle.jdbc.driver.T4CPreparedStatement.doDescribe(T4CPreparedStatement.java:719)
+	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3951)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+	at oracle.jdbc.driver.GeneratedResultSet.getDouble(GeneratedResultSet.java:1328)
+	at com.revature.repository.UserRepository.updateBalance(UserRepository.java:131)
+	at com.revature.service.Services.validateBalance(Services.java:62)
+	at com.revature.controller.Controller.start(Controller.java:58)
+	at com.revature.Main.main(Main.java:18)
+2019-06-25 06:25:09 TRACE UserRepository:35 - Entering create method with parameter: User [firstName=rabeet, lastName=butt, account=Account [userName=rabeet009, password=password, balance=200.0]]
+2019-06-25 06:25:09 ERROR UserRepository:54 - Could not create user account.
+java.sql.SQLIntegrityConstraintViolationException: ORA-00001: unique constraint (BANK_DB.PK_USER) violated
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+	at com.revature.repository.UserRepository.create(UserRepository.java:49)
+	at com.revature.controller.Controller.start(Controller.java:65)
+	at com.revature.Main.main(Main.java:18)
+2019-06-25 06:28:29 TRACE UserRepository:90 - Entering find password by name method with username: rabeet009
+2019-06-25 06:28:30 TRACE UserRepository:90 - Entering find password by name method with username: rabeet009
+2019-06-25 06:46:07 TRACE UserRepository:90 - Entering find password by name method with username: elbio
+2019-06-25 06:46:08 TRACE UserRepository:90 - Entering find password by name method with username: elbio
+2019-06-25 06:46:08 TRACE UserRepository:90 - Entering find password by name method with username: elbio
+2019-06-25 06:46:17 TRACE UserRepository:117 - Entering update account balance method with new amount 700.0 for username: elbio
+2019-06-25 06:46:17 ERROR UserRepository:135 - Could not update balance
+java.sql.SQLException: ORA-01002: fetch out of sequence
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.fetch(T4CPreparedStatement.java:1022)
+	at oracle.jdbc.driver.OracleStatement.fetchMoreRows(OracleStatement.java:3590)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.fetchMoreRows(InsensitiveScrollableResultSet.java:1008)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.absoluteInternal(InsensitiveScrollableResultSet.java:972)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.next(InsensitiveScrollableResultSet.java:572)
+	at com.revature.repository.UserRepository.updateBalance(UserRepository.java:130)
+	at com.revature.service.Services.validateBalance(Services.java:61)
+	at com.revature.controller.Controller.start(Controller.java:58)
+	at com.revature.Main.main(Main.java:18)
+2019-06-25 06:46:17 TRACE UserRepository:117 - Entering update account balance method with new amount 700.0 for username: elbio
+2019-06-25 06:46:17 ERROR UserRepository:135 - Could not update balance
+java.sql.SQLException: ORA-01002: fetch out of sequence
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.fetch(T4CPreparedStatement.java:1022)
+	at oracle.jdbc.driver.OracleStatement.fetchMoreRows(OracleStatement.java:3590)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.fetchMoreRows(InsensitiveScrollableResultSet.java:1008)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.absoluteInternal(InsensitiveScrollableResultSet.java:972)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.next(InsensitiveScrollableResultSet.java:572)
+	at com.revature.repository.UserRepository.updateBalance(UserRepository.java:130)
+	at com.revature.service.Services.validateBalance(Services.java:62)
+	at com.revature.controller.Controller.start(Controller.java:58)
+	at com.revature.Main.main(Main.java:18)
+2019-06-25 06:46:17 TRACE UserRepository:35 - Entering create method with parameter: User [firstName=elbio, lastName=iseas, account=Account [userName=elbio, password=utah, balance=700.0]]
+2019-06-25 06:47:10 TRACE UserRepository:90 - Entering find password by name method with username: elbio
+2019-06-25 06:47:55 TRACE UserRepository:117 - Entering update account balance method with new amount -150.0 for username: elbio
+2019-06-25 06:47:56 ERROR UserRepository:135 - Could not update balance
+java.sql.SQLSyntaxErrorException: ORA-00900: invalid SQL statement
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:392)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:385)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:938)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Odscrarr.doODNY(T4C8Odscrarr.java:96)
+	at oracle.jdbc.driver.T4CPreparedStatement.doDescribe(T4CPreparedStatement.java:719)
+	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3951)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+	at oracle.jdbc.driver.GeneratedResultSet.getDouble(GeneratedResultSet.java:1328)
+	at com.revature.repository.UserRepository.updateBalance(UserRepository.java:131)
+	at com.revature.service.Services.validateBalance(Services.java:61)
+	at com.revature.controller.Controller.start(Controller.java:58)
+	at com.revature.Main.main(Main.java:18)
+2019-06-25 06:47:56 TRACE UserRepository:117 - Entering update account balance method with new amount -150.0 for username: elbio
+2019-06-25 06:47:56 ERROR UserRepository:135 - Could not update balance
+java.sql.SQLSyntaxErrorException: ORA-00900: invalid SQL statement
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:392)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:385)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:938)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Odscrarr.doODNY(T4C8Odscrarr.java:96)
+	at oracle.jdbc.driver.T4CPreparedStatement.doDescribe(T4CPreparedStatement.java:719)
+	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3951)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+	at oracle.jdbc.driver.GeneratedResultSet.getDouble(GeneratedResultSet.java:1328)
+	at com.revature.repository.UserRepository.updateBalance(UserRepository.java:131)
+	at com.revature.service.Services.validateBalance(Services.java:62)
+	at com.revature.controller.Controller.start(Controller.java:58)
+	at com.revature.Main.main(Main.java:18)
+2019-06-25 06:47:56 TRACE UserRepository:35 - Entering create method with parameter: User [firstName=elbio, lastName=iseas, account=Account [userName=elbio, password=utah, balance=-150.0]]
+2019-06-25 06:47:56 ERROR UserRepository:54 - Could not create user account.
+java.sql.SQLIntegrityConstraintViolationException: ORA-00001: unique constraint (BANK_DB.PK_USER) violated
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+	at com.revature.repository.UserRepository.create(UserRepository.java:49)
+	at com.revature.controller.Controller.start(Controller.java:65)
+	at com.revature.Main.main(Main.java:18)
+2019-06-25 07:19:42 TRACE UserRepository:90 - Entering find password by name method with username: elbio
+2019-06-25 07:19:57 TRACE UserRepository:117 - Entering update account balance method with new amount -100.0 for username: elbio
+2019-06-25 07:19:58 ERROR UserRepository:135 - Could not update balance
+java.sql.SQLSyntaxErrorException: ORA-00900: invalid SQL statement
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:392)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:385)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:938)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Odscrarr.doODNY(T4C8Odscrarr.java:96)
+	at oracle.jdbc.driver.T4CPreparedStatement.doDescribe(T4CPreparedStatement.java:719)
+	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3951)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+	at oracle.jdbc.driver.GeneratedResultSet.getDouble(GeneratedResultSet.java:1328)
+	at com.revature.repository.UserRepository.updateBalance(UserRepository.java:131)
+	at com.revature.service.Services.validateBalance(Services.java:61)
+	at com.revature.controller.Controller.start(Controller.java:58)
+	at com.revature.Main.main(Main.java:18)
+2019-06-25 07:19:58 TRACE UserRepository:117 - Entering update account balance method with new amount -100.0 for username: elbio
+2019-06-25 07:19:58 ERROR UserRepository:135 - Could not update balance
+java.sql.SQLSyntaxErrorException: ORA-00900: invalid SQL statement
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:392)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:385)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:938)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Odscrarr.doODNY(T4C8Odscrarr.java:96)
+	at oracle.jdbc.driver.T4CPreparedStatement.doDescribe(T4CPreparedStatement.java:719)
+	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3951)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+	at oracle.jdbc.driver.GeneratedResultSet.getDouble(GeneratedResultSet.java:1328)
+	at com.revature.repository.UserRepository.updateBalance(UserRepository.java:131)
+	at com.revature.service.Services.validateBalance(Services.java:62)
+	at com.revature.controller.Controller.start(Controller.java:58)
+	at com.revature.Main.main(Main.java:18)
+2019-06-25 07:19:58 TRACE UserRepository:35 - Entering create method with parameter: User [firstName=elbio, lastName=iseas, account=Account [userName=elbio, password=utah, balance=-100.0]]
+2019-06-25 07:19:58 ERROR UserRepository:54 - Could not create user account.
+java.sql.SQLIntegrityConstraintViolationException: ORA-00001: unique constraint (BANK_DB.PK_USER) violated
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+	at com.revature.repository.UserRepository.create(UserRepository.java:49)
+	at com.revature.controller.Controller.start(Controller.java:65)
+	at com.revature.Main.main(Main.java:18)
+2019-06-25 07:24:26 TRACE UserRepository:90 - Entering find password by name method with username: saaim
+2019-06-25 07:24:27 TRACE UserRepository:90 - Entering find password by name method with username: saaim
+2019-06-25 07:24:28 TRACE UserRepository:90 - Entering find password by name method with username: saaim
+2019-06-25 07:24:41 TRACE UserRepository:117 - Entering update account balance method with new amount 200.0 for username: saaim
+2019-06-25 07:24:42 ERROR UserRepository:135 - Could not update balance
+java.sql.SQLException: ORA-01002: fetch out of sequence
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.fetch(T4CPreparedStatement.java:1022)
+	at oracle.jdbc.driver.OracleStatement.fetchMoreRows(OracleStatement.java:3590)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.fetchMoreRows(InsensitiveScrollableResultSet.java:1008)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.absoluteInternal(InsensitiveScrollableResultSet.java:972)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.next(InsensitiveScrollableResultSet.java:572)
+	at com.revature.repository.UserRepository.updateBalance(UserRepository.java:130)
+	at com.revature.service.Services.validateBalance(Services.java:61)
+	at com.revature.controller.Controller.start(Controller.java:58)
+	at com.revature.Main.main(Main.java:18)
+2019-06-25 07:24:42 TRACE UserRepository:117 - Entering update account balance method with new amount 200.0 for username: saaim
+2019-06-25 07:24:42 ERROR UserRepository:135 - Could not update balance
+java.sql.SQLException: ORA-01002: fetch out of sequence
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.fetch(T4CPreparedStatement.java:1022)
+	at oracle.jdbc.driver.OracleStatement.fetchMoreRows(OracleStatement.java:3590)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.fetchMoreRows(InsensitiveScrollableResultSet.java:1008)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.absoluteInternal(InsensitiveScrollableResultSet.java:972)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.next(InsensitiveScrollableResultSet.java:572)
+	at com.revature.repository.UserRepository.updateBalance(UserRepository.java:130)
+	at com.revature.service.Services.validateBalance(Services.java:62)
+	at com.revature.controller.Controller.start(Controller.java:58)
+	at com.revature.Main.main(Main.java:18)
+2019-06-25 07:24:42 TRACE UserRepository:35 - Entering create method with parameter: User [firstName=saaim, lastName=huda, account=Account [userName=saaim, password=password, balance=200.0]]
+2019-06-25 07:26:46 TRACE UserRepository:90 - Entering find password by name method with username: saaim
+2019-06-25 07:26:47 TRACE UserRepository:90 - Entering find password by name method with username: saaim

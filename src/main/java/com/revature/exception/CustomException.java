@@ -7,6 +7,10 @@ public class CustomException {
 		throw new Exception("Re-enter info");
 	}
 	
+	public void throwExceptionExists() throws Exception {
+		throw new Exception("Username already exists");
+	}
+	
 	public void throwExceptionPWord() throws Exception {
 		throw new Exception("Password is incorrect");
 	}
@@ -15,9 +19,6 @@ public class CustomException {
 		throw new Exception("Not enough money");
 	}
 	
-	public void throwExceptionNegative() throws Exception {
-		throw new Exception("Can't enter a negative amount");
-	}
 	
 	
 	

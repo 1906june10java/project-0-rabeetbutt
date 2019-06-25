@@ -119,7 +119,7 @@ public class UserRepository implements UserDAO{
 		try(Connection connection = ConnectionUtil.getConnection()) {
 			
 			int paramterIndex = 0;
-			String sql = "UPDATE USER_ACCOUNT SET BALANCE = BALANCE + ? WHERE U_NAME = ?";
+			String sql = "UPDATE USER_ACCOUNT SET BALANCE = BALANCE + (?) WHERE U_NAME = ?";
 			
 			PreparedStatement statement = connection.prepareStatement(sql);
 			statement.setDouble(++paramterIndex, amount);
@@ -136,5 +136,6 @@ public class UserRepository implements UserDAO{
 		}
 		return null;
 	}
+
 	
 }
