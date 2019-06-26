@@ -17,7 +17,17 @@ public class Services {
 			return false;
 		}
 		
+		//handles nullpoint exception err
+		else if (repository.findUserName(uName) == null) {
+			return true;
+		}
+		
 		else if (uName.equals(repository.findUserName(uName))){
+			customException.throwExceptionExists();
+			return false;
+		}
+		
+		else if (repository.findUserName(uName).equals(uName)) {
 			customException.throwExceptionExists();
 			return false;
 		}
@@ -39,9 +49,6 @@ public class Services {
 			System.out.println("Login successful");
 			return true;
 		}
-		else if (repository.findPassword(uName) == null){
-			return true;
-		}
 		else {
 			customException.throwExceptionPWord();
 			return false;
@@ -60,6 +67,7 @@ public class Services {
 			return true;
 		}
 		
+		//ensures excess amount of money can never be withdrawn
 		else if (repository.getBalance(uName) + amount < 0) {
 			customException.throwExceptionWithdraw();
 			return false;

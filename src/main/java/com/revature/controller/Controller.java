@@ -28,24 +28,28 @@ public class Controller {
 		Services services = new Services();
 		CustomException cException = new CustomException();
 		
+		//iterates over a menu 
 		boolean quit = false;
 		do {
 			
 			menu();
 			int option = userInput.nextInt();
 			switch(option) {
+			//create user account
 			case 1:
-			
+				
 				System.out.println("Please enter your first name: ");
 				String firstName = userInput.next();
-
+				
 				System.out.println("Please enter your last name: ");
 				String lastName = userInput.next();
-							
+				
+				
 				do {
 					System.out.println("Please enter a user name for the bank account: ");
 					userName = userInput.next();
 				}while(!services.validateUName(userName));
+				
 				
 				System.out.println("Please enter the password for the bank account: ");
 				password = userInput.next();
@@ -61,15 +65,16 @@ public class Controller {
 					continue;
 				}while(amount < 0);
 				
-				
 				Account account = new Account(userName, password, amount);
 				User user = new User(firstName, lastName, account);
 				repository.create(user);
 				
+				System.out.println("View current balance: " + "$" + repository.getBalance(userName));
+				
 				break;
 				
+			//login into existing account
 			case 2:
-				
 				
 				System.out.println("Please enter a user name for the bank account: ");
 				userName = userInput.next();
@@ -88,9 +93,9 @@ public class Controller {
 				
 				System.out.println("View current balance: " + "$" + repository.getBalance(userName));
 				
-				
 				break;
 				
+			//logout
 			case 3:
 				System.out.println("Logout successful");
 				quit = true;

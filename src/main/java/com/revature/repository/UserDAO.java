@@ -5,6 +5,7 @@ import com.revature.model.*;
 
 public interface UserDAO {
 	
+	//CRUD operations 
 	public boolean create(User user);
 	public String findUserName(String username);
 	public String findPassword(String username);

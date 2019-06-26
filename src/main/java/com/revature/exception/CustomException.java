@@ -11,6 +11,10 @@ public class CustomException {
 		throw new Exception("Username already exists");
 	}
 	
+	public void throwExceptionNotExists() throws Exception {
+		throw new Exception("Username does not exist");
+	}
+	
 	public void throwExceptionPWord() throws Exception {
 		throw new Exception("Password is incorrect");
 	}
