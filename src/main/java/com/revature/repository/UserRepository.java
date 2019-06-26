@@ -18,17 +18,6 @@ public class UserRepository implements UserDAO{
 
 	private static final Logger LOGGER = Logger.getLogger(UserRepository.class);
 	
-	@Override
-	public List<User> getAllUsers() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	
-	@Override
-	public void delete(User user) {
-		// TODO Auto-generated method stub
-		
-	}
 	
 	@Override
 	public boolean create(User user) {
@@ -119,7 +108,7 @@ public class UserRepository implements UserDAO{
 		try(Connection connection = ConnectionUtil.getConnection()) {
 			
 			int paramterIndex = 0;
-			String sql = "UPDATE USER_ACCOUNT SET BALANCE = BALANCE + (?) WHERE U_NAME = ?";
+			String sql = "UPDATE USER_ACCOUNT SET BALANCE = ? WHERE U_NAME = ?";
 			
 			PreparedStatement statement = connection.prepareStatement(sql);
 			statement.setDouble(++paramterIndex, amount);
@@ -137,5 +126,29 @@ public class UserRepository implements UserDAO{
 		return null;
 	}
 
+	@Override
+	public Double getBalance(String userName) {
+		
+		LOGGER.trace("Entering get account balance method for username: " + userName);
+		
+		try(Connection connection = ConnectionUtil.getConnection()) {
+			
+			int paramterIndex = 0;
+			String sql = "SELECT BALANCE FROM USER_ACCOUNT WHERE U_NAME = ?";
+			
+			PreparedStatement statement = connection.prepareStatement(sql);
+			statement.setString(++paramterIndex, userName);
+			
+			ResultSet result = statement.executeQuery();
+			
+			if (result.next()) {
+				return result.getDouble("BALANCE");
+			}
+			
+		} catch (SQLException e) {
+			LOGGER.error("Could not get balance", e);
+		}
+		return null;
+	}
 	
 }

@@ -12,15 +12,15 @@ public class Services {
 	
 	public boolean validateUName(String uName) throws Exception  {
 		
-		if (uName.isEmpty()) {
-			customException.throwExceptionBlank();
+		if (uName.equals("")) {
+			customException.throwExceptionInvalidData();
 			return false;
 		}
 		
-		/*else if (uName.equals(repository.findUserName(uName))){
+		else if (uName.equals(repository.findUserName(uName))){
 			customException.throwExceptionExists();
 			return false;
-		}*/
+		}
 		
 		else {
 			return true;
@@ -30,18 +30,16 @@ public class Services {
 	
 	public boolean validatePWord(String uName, String pWord) throws Exception {
 		
-		if (pWord.isEmpty()) {
-			customException.throwExceptionBlank();
+		if (pWord.equals("")) {
+			customException.throwExceptionInvalidData();
 			return false;
 		}
 		
 		else if (pWord.equals(repository.findPassword(uName))) {
-			System.out.println("Successful login");
+			System.out.println("Login successful");
 			return true;
 		}
 		else if (repository.findPassword(uName) == null){
-			System.out.println("password from input is: " + pWord);
-			System.out.println("password from db is: " + repository.findPassword(uName));
 			return true;
 		}
 		else {
@@ -51,24 +49,24 @@ public class Services {
 		
 	}
 	
-	public boolean validateBalance(String uName, Double balance) throws Exception {
+	public boolean validateBalance(String uName, Double amount) throws Exception {
 		
-		if(balance.toString().isEmpty()) {
-			customException.throwExceptionBlank();
+		if(amount.toString().isEmpty()) {
+			customException.throwExceptionInvalidData();
 			return false;
 		}
 		
-		else if (repository.updateBalance(uName, balance) == null) {
-			System.out.println("initial balance: " + repository.updateBalance(uName, balance));
+		else if (repository.getBalance(uName) == null) {
 			return true;
 		}
 		
-		else if (repository.updateBalance(uName, balance) < 0) {
+		else if (repository.getBalance(uName) + amount < 0) {
 			customException.throwExceptionWithdraw();
 			return false;
 		}
 				
 		else {
+			repository.updateBalance(uName, repository.getBalance(uName) + amount);
 			return true;
 		}
 	}

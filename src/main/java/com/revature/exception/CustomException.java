@@ -3,7 +3,7 @@ package com.revature.exception;
 //checks for possible invalid user input
 public class CustomException {
 	
-	public void throwExceptionBlank() throws Exception {
+	public void throwExceptionInvalidData() throws Exception {
 		throw new Exception("Re-enter info");
 	}
 	
@@ -18,8 +18,6 @@ public class CustomException {
 	public void throwExceptionWithdraw() throws Exception {
 		throw new Exception("Not enough money");
 	}
-	
-	
 	
 	
 }
